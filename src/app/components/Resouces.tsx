@@ -7,9 +7,10 @@ import Image from "next/image";
 import { TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SecondCarousel from "./SecondCarousel";
+import Slider from "react-slick";
 
 const Resouces = () => {
-  const sliderRef = useRef(null);
+  const sliderRef = useRef<Slider>(null);
 
   const goToNextSlide = () => {
     if (sliderRef.current) {

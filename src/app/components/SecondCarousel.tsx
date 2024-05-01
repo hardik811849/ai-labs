@@ -8,7 +8,7 @@ import resource1 from "../../../public/resources-1.png.png";
 import resource2 from "../../../public/resources-2.png.png";
 import resource3 from "../../../public/resources-3.png.png";
 
-const SecondCarousel = forwardRef((props, ref) => {
+const SecondCarousel = forwardRef<Slider>((props, ref) => {
   var settings = {
     dots: false,
     infinite: true,
@@ -79,7 +79,7 @@ const SecondCarousel = forwardRef((props, ref) => {
             </p>
             <p className="mb-[30px] text-[14px] text-zinc-500">
               Contrary to popular belief, AI is not just algorithms and data;
-              it's also a powerful tool for unleashing...
+              its also a powerful tool for unleashing...
             </p>
             <Button className="bg-transparent !px-0 !py-0 !font-sarpanch flex gap-3 text-[26px] know-more">
               Know more <TrendingUp className="know-more-arrow" />
