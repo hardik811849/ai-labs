@@ -14,6 +14,7 @@ const Hero = () => {
             autoPlay
             muted
             loop
+            playsInline
             className="w-full md:h-[95vh] lg:h-[110vh] xl:h-[100vh]  sm:h-[94vh]  object-cover"
           ></video>
         </div>
