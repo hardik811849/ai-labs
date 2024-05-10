@@ -17,7 +17,7 @@ const Hero = () => {
             className="w-full md:h-[95vh] lg:h-[110vh] xl:h-[100vh]  sm:h-[94vh]  object-cover"
           ></video>
         </div>
-        <div className="absolute xl:top-52 lg:top-48 md:top-[20%] sm:top-[20%] lg:left-[110px] xl:left-[150px] xxl:left-80 md:left-[70px] sm:left-10">
+        <div className="absolute xl:top-52 lg:top-40 md:top-[20%] sm:top-[20%] lg:left-[110px] xl:left-[150px] xxl:left-80 md:left-[70px] sm:left-10">
           <Badge
             variant="outline"
             className="text-white font-inter bg-gradient-to-b from-gray-500 border-none w-[fit] lg:text-xl sm:text-md text-center"
