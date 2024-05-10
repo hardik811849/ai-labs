@@ -28,7 +28,7 @@ const Navbar = () => {
           <Image
             src={logo}
             alt="Logo"
-            className="md:w-72 sm:h-[40px] sm:w-[auto] md:size-[auto] xl:h-[60px] sm:mt-1 xl:mt-0"
+            className="md:h-[50px] md:w-[auto] sm:h-[40px] sm:w-[auto] xl:h-[60px] xl:w-[auto] sm:mt-1 xl:mt-0"
           />
         </Link>
         {!isMenuOpen && <Menu className="xl:hidden" onClick={toggleMenu} />}

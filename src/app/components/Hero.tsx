@@ -14,21 +14,21 @@ const Hero = () => {
             autoPlay
             muted
             loop
-            className="w-full md:h-[90vh] lg:h-[110vh] xl:h-[100vh]  sm:h-[94vh]  object-cover"
+            className="w-full md:h-[95vh] lg:h-[110vh] xl:h-[100vh]  sm:h-[94vh]  object-cover"
           ></video>
         </div>
-        <div className="absolute lg:top-52 md:top-[30%] sm:top-[20%] lg:left-[110px] xl:left-[150px] xxl:left-80 md:left-[70px] sm:left-10">
+        <div className="absolute lg:top-52 md:top-[20%] sm:top-[20%] lg:left-[110px] xl:left-[150px] xxl:left-80 md:left-[70px] sm:left-10">
           <Badge
             variant="outline"
             className="text-white font-inter bg-gradient-to-b from-gray-500 border-none w-[fit] lg:text-xl sm:text-md text-center"
           >
             Soar to New Heights!
           </Badge>
-          <p className="lg:text-6xl md:text-4xl sm:text-3xl font-inter  lg:w-[510px] md:w-[500px] sm:w-[80%] mt-[20px] leading-tight">
+          <p className="lg:text-6xl md:text-3xl sm:text-3xl font-inter  lg:w-[510px] md:w-[500px] sm:w-[80%] mt-[20px] leading-tight">
             Elevate your Experience With Power{" "}
             <span className="text-gradient">AI Labs</span>
           </p>
-          <p className="text-zinc-400  lg:w-[30rem] md:w-[70%] sm:w-[100%] sm:mt-[20px] text-lg font-inter leading-9 left-80">
+          <p className="text-zinc-400 lg:w-[30rem] md:w-[70%] sm:w-[100%] sm:mt-[20px] md:text-md lg:text-lg font-inter leading-9 left-80">
             Unleash the next level of innovation and efficiency with Power AI,
             transforming your digital journey into a realm of unparalleled
             possibilities.

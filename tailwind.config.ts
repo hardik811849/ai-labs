@@ -78,9 +78,9 @@ const config = {
       },
       screens: {
         sm: "300px",
-        md: "850px",
-        lg: "1150px",
-        xl: "1600px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1440px",
         xxl: "1600px",
       },
       important: true,
