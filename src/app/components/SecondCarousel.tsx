@@ -10,7 +10,7 @@ import resource3 from "../../../public/resources-3.png.png";
 
 const SecondCarousel = forwardRef<Slider>((props, ref) => {
   var settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 2000,
     slidesToShow: 3,
@@ -55,14 +55,14 @@ const SecondCarousel = forwardRef<Slider>((props, ref) => {
               alt="1"
               className="mb-[30px]"
             />
-            <p className="text-[24px] mb-[20px]">
+            <p className="lg:text-[24px] mb-[20px]">
               A Journey into the Heart of Innovation
             </p>
             <p className="mb-[30px] text-[14px] text-zinc-500">
               Artificial Intelligence (AI) has transcended the realm of science
               fiction, becoming a pervasive force that...
             </p>
-            <Button className="bg-transparent !px-0 !py-0 !font-sarpanch flex gap-3 text-[26px] know-more">
+            <Button className="bg-transparent !px-0 !py-0 !font-sarpanch flex gap-3 text-[20px] know-more">
               Know more <TrendingUp className="know-more-arrow" />
             </Button>
           </div>
@@ -74,14 +74,14 @@ const SecondCarousel = forwardRef<Slider>((props, ref) => {
               alt="2"
               className="mb-[30px]"
             />
-            <p className="text-[24px] mb-[20px]">
+            <p className="lg:text-[24px] mb-[20px]">
               The Intersection between Technology and Art{" "}
             </p>
             <p className="mb-[30px] text-[14px] text-zinc-500">
               Contrary to popular belief, AI is not just algorithms and data;
               its also a powerful tool for unleashing...
             </p>
-            <Button className="bg-transparent !px-0 !py-0 !font-sarpanch flex gap-3 text-[26px] know-more">
+            <Button className="bg-transparent !px-0 !py-0 !font-sarpanch flex gap-3 text-[20px] know-more">
               Know more <TrendingUp className="know-more-arrow" />
             </Button>
           </div>
@@ -93,14 +93,14 @@ const SecondCarousel = forwardRef<Slider>((props, ref) => {
               alt="3"
               className="mb-[30px]"
             />
-            <p className="text-[24px] mb-[20px]">
+            <p className="lg:text-[24px] mb-[20px]">
               Tackle Global Challenges with Technology{" "}
             </p>
             <p className="mb-[30px] text-[14px] text-zinc-500">
               Explore the inspiring initiatives where AI is harnessed for the
               greater good. From addressing environment...
             </p>
-            <Button className="bg-transparent !px-0 !py-0 !font-sarpanch flex gap-3 text-[26px] know-more">
+            <Button className="bg-transparent !px-0 !py-0 !font-sarpanch flex gap-3 text-[20px] know-more">
               Know more <TrendingUp className="know-more-arrow" />
             </Button>
           </div>
@@ -112,14 +112,14 @@ const SecondCarousel = forwardRef<Slider>((props, ref) => {
               alt="3"
               className="mb-[30px]"
             />
-            <p className="text-[24px] mb-[20px]">
+            <p className="lg:text-[24px] mb-[20px]">
               Tackle Global Challenges with Technology{" "}
             </p>
             <p className="mb-[30px] text-[14px] text-zinc-500">
               Explore the inspiring initiatives where AI is harnessed for the
               greater good. From addressing environment...
             </p>
-            <Button className="bg-transparent !px-0 !py-0 !font-sarpanch flex gap-3 text-[26px] know-more">
+            <Button className="bg-transparent !px-0 !py-0 !font-sarpanch flex gap-3 text-[20px] know-more">
               Know more <TrendingUp className="know-more-arrow" />
             </Button>
           </div>
@@ -131,14 +131,14 @@ const SecondCarousel = forwardRef<Slider>((props, ref) => {
               alt="3"
               className="mb-[30px]"
             />
-            <p className="text-[24px] mb-[20px]">
+            <p className="lg:text-[24px] mb-[20px]">
               Tackle Global Challenges with Technology{" "}
             </p>
             <p className="mb-[30px] text-[14px] text-zinc-500">
               Explore the inspiring initiatives where AI is harnessed for the
               greater good. From addressing environment...
             </p>
-            <Button className="bg-transparent !px-0 !py-0 !font-sarpanch flex gap-3 text-[26px] know-more">
+            <Button className="bg-transparent !px-0 !py-0 !font-sarpanch flex gap-3 text-[20px] know-more">
               Know more <TrendingUp className="know-more-arrow" />
             </Button>
           </div>

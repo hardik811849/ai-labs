@@ -26,7 +26,16 @@ const Carousel = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 769,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -43,12 +52,12 @@ const Carousel = () => {
     ],
   };
   return (
-    <div className="">
+    <div className="hero-carousel">
       <div className="slider-container">
         <Slider {...settings}>
           <div>
             <Image
-              src={"carousel/5 → SVG.svg"}
+              src={"carousel/5_SVG.svg"}
               width={200}
               height={200}
               alt="slide-1"
@@ -56,7 +65,7 @@ const Carousel = () => {
           </div>
           <div>
             <Image
-              src={"carousel/5 → SVG (1).svg"}
+              src={"carousel/5_SVG (1).svg"}
               width={200}
               height={200}
               alt="slide-1"
@@ -64,7 +73,7 @@ const Carousel = () => {
           </div>
           <div>
             <Image
-              src={"carousel/5 → SVG (2).svg"}
+              src={"carousel/5_SVG (2).svg"}
               width={200}
               height={200}
               alt="slide-1"
@@ -72,7 +81,7 @@ const Carousel = () => {
           </div>
           <div>
             <Image
-              src={"carousel/5 → SVG (3).svg"}
+              src={"carousel/5_SVG (3).svg"}
               width={200}
               height={200}
               alt="slide-1"
@@ -80,7 +89,7 @@ const Carousel = () => {
           </div>
           <div>
             <Image
-              src={"carousel/5 → SVG (4).svg"}
+              src={"carousel/5_SVG (4).svg"}
               width={200}
               height={200}
               alt="slide-1"
@@ -88,7 +97,7 @@ const Carousel = () => {
           </div>
           <div>
             <Image
-              src={"carousel/5 → SVG.svg"}
+              src={"carousel/5_SVG.svg"}
               width={200}
               height={200}
               alt="slide-1"
@@ -96,7 +105,7 @@ const Carousel = () => {
           </div>
           <div>
             <Image
-              src={"carousel/5 → SVG (1).svg"}
+              src={"carousel/5_SVG (1).svg"}
               width={200}
               height={200}
               alt="slide-1"
@@ -104,7 +113,7 @@ const Carousel = () => {
           </div>
           <div>
             <Image
-              src={"carousel/5 → SVG (2).svg"}
+              src={"carousel/5_SVG (2).svg"}
               width={200}
               height={200}
               alt="slide-1"
@@ -112,7 +121,7 @@ const Carousel = () => {
           </div>
           <div>
             <Image
-              src={"carousel/5 → SVG (3).svg"}
+              src={"carousel/5_SVG (3).svg"}
               width={200}
               height={200}
               alt="slide-1"
@@ -120,7 +129,7 @@ const Carousel = () => {
           </div>
           <div>
             <Image
-              src={"carousel/5 → SVG (4).svg"}
+              src={"carousel/5_SVG (4).svg"}
               width={200}
               height={200}
               alt="slide-1"
@@ -128,7 +137,7 @@ const Carousel = () => {
           </div>
           <div>
             <Image
-              src={"carousel/5 → SVG.svg"}
+              src={"carousel/5_SVG.svg"}
               width={200}
               height={200}
               alt="slide-1"
@@ -136,7 +145,7 @@ const Carousel = () => {
           </div>
           <div>
             <Image
-              src={"carousel/5 → SVG (1).svg"}
+              src={"carousel/5_SVG (1).svg"}
               width={200}
               height={200}
               alt="slide-1"
@@ -144,7 +153,7 @@ const Carousel = () => {
           </div>
           <div>
             <Image
-              src={"carousel/5 → SVG (2).svg"}
+              src={"carousel/5_SVG (2).svg"}
               width={200}
               height={200}
               alt="slide-1"
@@ -152,7 +161,7 @@ const Carousel = () => {
           </div>
           <div>
             <Image
-              src={"carousel/5 → SVG (3).svg"}
+              src={"carousel/5_SVG (3).svg"}
               width={200}
               height={200}
               alt="slide-1"

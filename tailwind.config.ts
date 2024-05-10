@@ -1,14 +1,14 @@
-import { Sarpanch } from "next/font/google"
-import type { Config } from "tailwindcss"
+import { Sarpanch } from "next/font/google";
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -77,15 +77,16 @@ const config = {
         inter: ["Inter", "sans-serif"],
       },
       screens: {
-        sm: '300px',
-        md: '768px',
-        lg: '976px',
-        xl: '1440px',
+        sm: "300px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1440px",
+        xxl: "1600px",
       },
       important: true,
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

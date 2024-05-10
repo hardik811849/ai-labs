@@ -4,7 +4,7 @@ import right from "../../../public/right.svg";
 import left from "../../../public/left.svg";
 import Image from "next/image";
 
-import { TrendingUp } from "lucide-react";
+import { Dot, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SecondCarousel from "./SecondCarousel";
 import Slider from "react-slick";
@@ -24,32 +24,32 @@ const Resouces = () => {
     }
   };
   return (
-    <div className="w-full mb-[200px]">
-      <div className="w-[80%] m-auto flex justify-between items-center mb-[100px] font-inter">
+    <div className="w-full lg:mb-[120px] sm:mb-[20px] mt-16">
+      <div className=" text-center  mb-[100px] font-inter">
         <div>
-          <p className="text-[50px]  font-semibold mb-[20px]">
+          <p className="lg:text-[50px] sm:mx-[5px] sm:text-[30px] font-semibold mb-[20px]">
             Our Useful Resources
           </p>
-          <p className="w-[53%] text-zinc-500 text-[16px]">
+          <p className="lg:mx-64 sm:mx-12 text-zinc-500 text-[16px] sm:mb-[-40px] md:mb-0">
             Dive into the forefront of innovation and thought leadership with
             our latest resources. Where insightful content meets the pulse of
             contemporary ideas, keeping you informed and inspired.
           </p>
         </div>
-        <div className="flex gap-4">
+      </div>
+
+      <div className="sm:flex sm:flex-col justify-between sm:mb-20 ">
+        <div className=" sm:w-[90%] lg:w-[95%] xl:w-[80%] font-inter lg:mx-auto gap-24 sm:mx-[30px]">
+          <SecondCarousel ref={sliderRef} />
+        </div>
+        {/* <div className="flex justify-center mt-8">
           <div className="image-gradient" onClick={goToPrevSlide}>
             <Image src={left} width={50} height={50} alt="left" />
           </div>
-          <div className="image-gradient" onClick={goToNextSlide}>
+          <div className="image-gradient " onClick={goToNextSlide}>
             <Image src={right} width={50} height={50} alt="right" />
           </div>
-        </div>
-      </div>
-
-      <div className="">
-        <div className="w-[80%] font-inter m-auto gap-24">
-          <SecondCarousel ref={sliderRef} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

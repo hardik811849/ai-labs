@@ -74,8 +74,13 @@
     @apply bg-background text-foreground;
     background-color: black;
     color: white;
+    overflow-x: hidden;
+    /* -webkit-scr */
   }
 }
+/* body::-webkit-scrollbar {
+  display: none;
+} */
 
 .text-gradient {
   background: linear-gradient(90deg, #6430fb, #b596fd);
@@ -93,6 +98,8 @@
 
 .button-gradient {
   background: linear-gradient(90deg, #6430fb, #b596fd);
+  border-width: 1px;
+  border: 1px solid #000;
 }
 
 .button-gradient:hover {
@@ -101,7 +108,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   border-color: #6430fb;
 }
@@ -200,6 +207,19 @@
   background: none;
   border-width: 2px;
   border-color: #6430fb;
+  position: relative;
+}
+
+.services-button::after {
+  content: "";
+  position: absolute;
+  top: -24px;
+  right: -24px;
+  border-bottom: 2px solid #6430fb;
+  width: 46px;
+  height: 46px;
+  transform: rotate(45deg);
+  background-color: #000;
 }
 
 .services-button:hover {
@@ -233,13 +253,13 @@
 .top-gradient-image-top {
   /* position: absolute; */
   /* top: 30rem; */
-  width: 26rem;
+  width: 95%;
   text-wrap: balance;
 }
 .top-gradient-image-bottom {
   /* position: absolute; */
   /* top: 59rem; */
-  width: 26rem;
+  width: 95%;
   text-wrap: balance;
 }
 
@@ -305,6 +325,7 @@
 .footer-gradient {
   background: linear-gradient(180deg, #312a49, #312a49, #030114);
   border-radius: 20px;
+  padding: 40px 0px;
 }
 .insight-background {
   background-image: url("../../public/626a535ab6740813728d1070_index_decentralized-p-2000.png.png");
@@ -324,6 +345,7 @@
 .divider {
   height: 0.7px;
   background-color: rgb(56, 56, 56);
+  margin: 10px auto;
 }
 .trending-right {
   right: 20px;
@@ -333,4 +355,59 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+  z-index: 100;
+  margin-top: 20px;
+  font-size: 12px !important;
+}
+
+.hero-carousel .slick-dots li button:before {
+  display: none;
+}
+
+.others-say-bg {
+  background: linear-gradient(180deg, #312a49, #312a49, #030114);
+}
+
+.others-say {
+  border: 1px solid #3f3f46;
+  border-bottom: 0;
+  border-radius: 20px;
+  padding: 28px;
+  color: #cac6dd;
+}
+.third-carousel .slick-current {
+  background: linear-gradient(180deg, #312a49, #312a49, #030114);
+  border-radius: 20px;
+  border: none;
+}
+.third-carousel .slick-slide {
+  margin: 0 10px;
+}
+.third-carousel .slick-list {
+  margin: 0 -10px;
+}
+.third-carousel {
+  height: 34vh;
+}
+@media screen and (max-width: 800px) {
+  .third-carousel .slick-slide {
+    margin: 0;
+  }
+  .third-carousel {
+    width: 80%;
+    margin: 0px auto;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .third-carousel .slick-slide {
+    margin: 0 4px;
+  }
+  .third-carousel {
+    width: 90%;
+    margin: 0px auto;
+  }
 }
