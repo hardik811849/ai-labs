@@ -45,7 +45,7 @@ const Hero = () => {
 
         <div className=" absolute xl:top-[95%] lg:top-[90%] md:top-[89%] sm:top-[90%] w-[80%]">
           <Carousel />
-          <p className="text-slate-500 font-inter text-[14px] lg:mt-14 md:mt-6 sm:mt-3">
+          <p className="text-slate-500 font-inter text-[14px] xl:mt-14 lg:mt-6 md:mt-6 sm:mt-3">
             <span className="text-white">AI Labs</span> is used by over{" "}
             <span className="text-white">15,000+</span> companies across the
             global
