@@ -401,6 +401,14 @@
     width: 80%;
     margin: 0px auto;
   }
+  .button-without-gradient {
+    background: none;
+    border-width: 2px;
+    border-color: #fff;
+    background: #fff;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 }
 @media screen and (min-width: 801px) and (max-width: 1024px) {
   .third-carousel .slick-slide {

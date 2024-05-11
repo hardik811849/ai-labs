@@ -17,7 +17,7 @@ const ThirdCarousel = forwardRef<Slider>((props, ref) => {
         breakpoint: 1440,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           centerMode: true,
           initialSlide: 1,
           infinite: true,

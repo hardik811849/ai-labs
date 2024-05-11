@@ -22,16 +22,18 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" w-full absolute z-10 flex flex-col items-center justify-center xl:pt-5 sm:pt-0 ">
+    <div className=" w-full absolute z-10 flex flex-col items-center justify-center sm:pt-3 xl:pt-5 sm:pt-0">
       <div className="w-[90%] flex justify-between items-center ">
         <Link href={"/"}>
           <Image
             src={logo}
             alt="Logo"
-            className="md:h-[50px] md:w-[auto] sm:h-[40px] sm:w-[auto] xl:h-[60px] xl:w-[auto] sm:mt-1 xl:mt-0"
+            className="md:h-[50px] md:w-[auto] sm:h-[48px] sm:w-[auto] xl:h-[60px] xl:w-[auto] mt-0"
           />
         </Link>
-        {!isMenuOpen && <Menu className="xl:hidden" onClick={toggleMenu} />}
+        {!isMenuOpen && (
+          <Menu className="xl:hidden" onClick={toggleMenu} size="28px" />
+        )}
         {isMenuOpen && (
           <Plus
             className="xl:hidden sm:z-20 sm:rotate-45"
@@ -39,21 +41,21 @@ const Navbar = () => {
           />
         )}
         <div
-          className={` xl:flex xl:flex-row xl:bg-transparent xl:p-0 xl:space-y-0 xl:relative xl:top-0 text-white font-semibold xl:text-2xl xl:w-[65%] justify-between sm:${
+          className={` xl:flex xl:flex-row xl:bg-none xl:p-0 xl:pt-0 xl:space-y-0 xl:relative xl:top-0 text-white font-semibold xl:text-2xl xl:w-[65%] justify-between sm:${
             isMenuOpen ? "flex" : "hidden"
-          } sm:flex-col sm:bg-[#0C0E16] sm:p-4 sm:px-10 sm:space-y-4 sm:absolute sm:w-full sm:top-1 sm:left-0 sm:text-lg`}
+          } sm:flex-col sm:bg-gradient-to-b from-[#322b4d] to-[#030114] sm:mt-[-10px] sm:p-4 sm:pt-[50px] sm:px-10 sm:space-y-4 sm:absolute sm:w-full sm:top-1 sm:left-0 sm:text-lg sm:items-center`}
         >
           <Link href={"/"} className="hover:cursor-pointer text-gradient-hover">
             Home
           </Link>
           <DropdownMenu>
-            <DropdownMenuTrigger className="border-none text-gradient-hover sm:w-[20px] xl:w-[auto]">
+            <DropdownMenuTrigger className="border-none text-gradient-hover sm:w-fit xl:w-[auto]">
               About
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="bg-transparent text-white hover:bg-none">
+            <DropdownMenuContent className="text-white text-center border-none xl:hover:bg-none bg-[#0C0E16] sm:w-56 xl:w-fit">
               <DropdownMenuLabel>
                 <Link href={"/about-us"} className="text-gradient-hover">
-                  About US
+                  About Us
                 </Link>
               </DropdownMenuLabel>
               <DropdownMenuLabel className="text-gradient-hover">
