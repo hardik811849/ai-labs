@@ -419,3 +419,31 @@
     margin: 0px auto;
   }
 }
+
+@keyframes up-down {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.up-down-animation {
+  @apply animate-[up-down_2s_ease-in-out_infinite];
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-animation {
+  animation: spin 10s linear infinite;
+}
